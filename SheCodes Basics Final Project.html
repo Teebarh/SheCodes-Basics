@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chocolate</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 4px;
+        border-color: #2a363b;
+        border: 1px solid;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        font-size: 30px;
+        padding: 25px;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 23px;
+        width: 80%;
+        margin-left: 20px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 4px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        padding: 15px;
+        background-color: #eb4a5f;
+        border-radius: 4px;
+        font-size: 18px;
+        box-shadow: #2a363b 1px 0.5px;
+        transition: all 200ms ease-in-out;
+        border: 1.5px solid #2a363b;
+      }
+
+      button:hover {
+        background-color: #2a363b;
+      }
+
+      .page {
+        background-image: linear-gradient(60deg, #feceab, #ff847c);
+        padding: 20px;
+        margin-left: 30px;
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 53%;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1;
+        font-size: 20px;
+      }
+
+      .wikipedia {
+        font-size: 13px;
+        margin-top: 30px;
+        text-decoration: none;
+        color: #2a363b;
+        opacity: 0.8;
+        transition: all 200ms ease-in-out;
+      }
+
+      .wikipedia:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        opacity: 0.7;
+        line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .footer-link {
+        text-decoration: none;
+        color: black;
+        font-weight: 10px;
+        transition: all 200ms ease-in-out;
+      }
+
+      .footer-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <h1>Chocolate Is Amazing!</h1>
+      <h2>What's Not To Love?</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/315/original/cake-pops-693645_1920.jpg?1693530690"
+        alt="Image of a wide bar of chocolate on a ceramic dish"
+      />
+      <hr />
+      <p>
+        <span><strong>Chocolate</strong>, a timeless delicacy,</span> has
+        captivated hearts across ages and cultures. Derived from the roasted
+        seeds of the Theobroma cacao tree, its rich, velvety texture and
+        profound depth of flavor make it a universal favorite. From the bitter
+        notes of dark chocolate to the creamy indulgence of milk chocolate and
+        the sweetness of white variants, chocolate is an intricate tapestry of
+        tastes. Beyond its decadence, it's a symbol of celebration, love, and
+        sometimes, a simple, quiet moment of personal indulgence. <br />Truly,
+        chocolate is more than just a treat;
+        <em>it's an experience.</em>
+      </p>
+      <div>
+        <span>
+          <a
+            href="https://en.wikipedia.org/wiki/Chocolate"
+            target="_blank"
+            class="wikipedia"
+            >Read about chocolates on Wikipedia</a
+          >
+        </span>
+      </div>
+      <button>Try this yummy treat!🍫</button>
+    </div>
+    <span class="footer">
+      <a href="https://www.linkedin.com/in/toyibatadele" class="footer-link"
+        >This page was built by Toyibat Adele</a
+      ></span
+    >
+
+    <script>
+      function inquiry() {
+        let name = prompt("What is your name?");
+        let preference = prompt("Do you like chocolate? Say Yes or No");
+
+        if (preference.toLowerCase() === "yes") {
+          alert("Fantastic " + name + "! We'll be in touch");
+        } else {
+          if (preference.toLowerCase() === "no") {
+            alert(
+              "That's a bummer " +
+                name +
+                ". We'll reach out with other offerings."
+            );
+          }
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", inquiry);
+    </script>
+  </body>
+</html>
